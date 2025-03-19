@@ -69,9 +69,8 @@ int sumaLista(List *L) {
       sum += elem;
       elem = next(L);
    }
-   
-   return sum;
    */
+   return 0;
 }
 
 /*
