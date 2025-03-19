@@ -50,3 +50,20 @@ Wed, Mar 19, 2025  9:13:24 AM:
  tests:  1|4
 total_score: 10/70
 ada3e12
+Wed, Mar 19, 2025  9:14:48 AM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:65:15: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+    int elem = first(L);
+               ^~~~~
+exercises.c:67:16: error: comparison between pointer and integer [-Werror]
+    while (elem != NULL)
+                ^~
+exercises.c:70:12: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+       elem = next(L);
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+95bd6b1

@@ -60,7 +60,7 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
-   /*
+   
    int sum = 0;
    int elem = first(L);
 
@@ -69,7 +69,7 @@ int sumaLista(List *L) {
       sum += elem;
       elem = next(L);
    }
-   */
+   
    return 0;
 }
 
