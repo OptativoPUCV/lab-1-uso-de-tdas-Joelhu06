@@ -81,3 +81,17 @@ exercises.c:70:13: error: assignment makes integer from pointer without a cast [
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4a602a9
+Wed, Mar 19, 2025  9:17:23 AM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaLista':
+exercises.c:69:11: error: invalid operands to binary + (have 'int *' and 'int *')
+       sum += elem;
+           ^~
+exercises.c:70:13: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+       *elem = next(L);
+             ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4099453
