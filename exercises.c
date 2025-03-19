@@ -60,6 +60,7 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
+   /*
    int sum = 0;
    int elem = first(L);
 
@@ -70,6 +71,7 @@ int sumaLista(List *L) {
    }
    
    return sum;
+   */
 }
 
 /*
@@ -82,6 +84,7 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
+   /*
    int num = first(L);
    while (num != NULL)
    {
@@ -89,7 +92,7 @@ void eliminaElementos(List*L, int elem){
       else num = next(L);
    }
    
-
+   */
 }
 
 /*
@@ -100,7 +103,7 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
-   Stack* P_aux = create_stack();
+   //Stack* P_aux = create_stack();
 
 
 }
