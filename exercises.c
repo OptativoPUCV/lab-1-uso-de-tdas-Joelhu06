@@ -62,14 +62,14 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
    
    int sum = 0;
-   int elem = first(L);
+   int *elem = first(L);
 
    while (elem != NULL)
    {
       sum += elem;
-      elem = next(L);
+      *elem = next(L);
    }
-   
+
    return 0;
 }
 
