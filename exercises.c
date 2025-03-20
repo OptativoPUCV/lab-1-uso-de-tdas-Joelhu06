@@ -62,11 +62,11 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
    
    int sum = 0;
-   int *elem = first(L);
+   void* elem = first(L);
 
    while (elem != NULL)
    {
-      sum += (int) elem;
+      sum += *(int*) elem;
       elem = next(L);
    }
 
