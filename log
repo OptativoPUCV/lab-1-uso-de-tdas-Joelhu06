@@ -247,3 +247,28 @@ stack.h:11:6: note: expected 'void *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5394c14
+Thu, Mar 20, 2025  8:55:51 PM: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:141:45: error: passing argument 2 of 'pushBack' makes pointer from integer without a cast [-Werror=int-conversion]
+       if(cadena[i] == '(') pushBack(lista1, '(');
+                                             ^~~
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:20:6: note: expected 'void *' but argument is of type 'int'
+ void pushBack(List *L, void *dato);
+      ^~~~~~~~
+In file included from test.c:5:0:
+exercises.c:142:45: error: passing argument 2 of 'pushBack' makes pointer from integer without a cast [-Werror=int-conversion]
+       if(cadena[i] == ')') pushBack(lista2, ')');
+                                             ^~~
+In file included from exercises.c:6:0,
+                 from test.c:5:
+arraylist.h:20:6: note: expected 'void *' but argument is of type 'int'
+ void pushBack(List *L, void *dato);
+      ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ff63bf8
