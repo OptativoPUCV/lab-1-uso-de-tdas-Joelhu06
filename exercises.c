@@ -140,6 +140,7 @@ int parentesisBalanceados(char *cadena)
    {
       if(cadena[i] == '(') pushBack(lista1, '(');
       if(cadena[i] == ')') pushBack(lista2, ')');
+      i++;
    }
 
    int count1 = get_size(lista1);
