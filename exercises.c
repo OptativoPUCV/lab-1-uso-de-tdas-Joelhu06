@@ -84,7 +84,7 @@ posiciona en el elemento anterior.
 
 void eliminaElementos(List*L, int elem){
 
-   void +num = first(L);
+   void *num = first(L);
    while (num != NULL)
    {
       if (*(int*)num == elem)
