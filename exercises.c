@@ -130,7 +130,22 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
 
-int parentesisBalanceados(char *cadena) {
-   return 0;
+int parentesisBalanceados(char *cadena)
+{
+   List* lista1 = create_list();
+   List* lista2 = create_list();
+
+   int i = 0;
+   while(cadena[i] != '\0')
+   {
+      if(cadena[i] == '(') push(lista1, cadena[i]);
+      if(cadena[i] == ')') push(lista2, cadena[i]);
+   }
+
+   int count1 = get_size(lista1);
+   int count2 = get_size(lista2);
+
+   if (count1 == count2) return 1;
+   else return 0;
 }
 
