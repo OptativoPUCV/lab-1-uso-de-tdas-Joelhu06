@@ -308,3 +308,9 @@ exercises.c:142:24: error: initialization from incompatible pointer type [-Werro
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5284e03
+Sat, Mar 22, 2025  5:12:09 PM: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  7|1
+total_score: 60/70
+453616d
